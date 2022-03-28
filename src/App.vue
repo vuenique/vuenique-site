@@ -1,29 +1,21 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "@/components/HelloWorld.vue";
+import Team from "./components/team-section/Team.vue";
+import Hero from "./components/hero-section/Hero.vue";
+import Gallery from "./components/gallery-section/Gallery.vue";
+import Features from "./components/features-section/Features.vue";
+import Navbar from "./components/navbar/Navbar.vue";
+import Installation from "./components/installation-section/Installation.vue";
+import FAQ from "./components/faq-section/FAQ.vue";
 </script>
 
 <template>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <Navbar />
+  <Hero />
+  <Gallery />
+  <Installation />
+  <Features />
+  <Team />
+  <FAQ />
 </template>
 
 <style>
