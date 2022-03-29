@@ -12,4 +12,13 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  server: {
+    "/": {
+      target: "http://localhost:8080/",
+      changeOrigin: true,
+      configure: (proxy, options) => {
+        // proxy will be an instance of 'http-proxy'
+      }
+    }
+  }
 });
