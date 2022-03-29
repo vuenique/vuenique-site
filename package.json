@@ -2,8 +2,9 @@
   "name": "vuenique-site",
   "version": "0.0.0",
   "scripts": {
+    "start": "nodemon src/server/server.js",
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && vite build --watch",
     "preview": "vite preview --port 5050",
     "test:unit": "vitest --environment jsdom",
     "test:e2e": "start-server-and-test preview http://127.0.0.1:5050/ 'cypress open'",
@@ -12,6 +13,13 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "body-parser": "^1.19.2",
+    "concurrently": "^7.0.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7",
     "vue": "^3.2.31"
   },
   "devDependencies": {
