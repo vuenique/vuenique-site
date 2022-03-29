@@ -9,23 +9,22 @@ const mongoose = require("mongoose");
 
 const PORT = 8080;
 
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
 app.use(express.static(path.resolve(__dirname, "../../dist/")))
-// app.get("../src/main.js", (req, res) => {
-//  res.status(200).sendFile(path.resolve(__dirname, "../src/main.js"))
-// })
+// // app.get("../src/main.js", (req, res) => {
+// //  res.status(200).sendFile(path.resolve(__dirname, "../src/main.js"))
+// // })
 
-app.get("/hehe",  (req, res) => {
-    res.send('hellow again');
-    console.log("hello from server")
-   //res.status(200).sendFile(path.resolve(__dirname, "../../index.html"));
-});
+// app.get("/hehe",  (req, res) => {
+//     res.send('hellow again');
+//     console.log("hello from server")
+//    //res.status(200).sendFile(path.resolve(__dirname, "../../index.html"));
+// });
 
-app.get("/", controller.dataController, (req, res) => {
+app.get("/data", controller.dataController, (req, res) => {
     res.status(200).json(res.locals.data);
  });
 
