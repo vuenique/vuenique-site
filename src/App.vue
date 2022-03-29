@@ -9,7 +9,6 @@ import FAQ from "./components/faq-section/FAQ.vue";
 </script>
 
 <template>
-<h1>Hellowwwwwwww </h1>
   <Navbar />
   <Hero />
   <Gallery />
