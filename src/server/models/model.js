@@ -1,9 +1,10 @@
 /* eslint-disable prettier/prettier */
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+require('dotenv').config();
 
-const MONGO_URI = "mongodb+srv://Mia:1q2w3e4r@mongodb1.jaqwf.mongodb.net/Vuenique?retryWrites=true&w=majority";
-
+const MONGO_URI = process.env.MONGO_URI;
+console.log(MONGO_URI);
 mongoose.connect(MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
