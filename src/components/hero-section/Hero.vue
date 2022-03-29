@@ -4,7 +4,7 @@
 
 <template>
   <div class="container">
-    <h1>Hero section</h1>
+    <h1 class="text-3xl font-bold underline">Hero section</h1>
   </div>
 </template>
 
