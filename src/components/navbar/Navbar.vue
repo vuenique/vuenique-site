@@ -1,35 +1,76 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+import type { Ref } from 'vue';
 
+const showMobileMenu: Ref<boolean> = ref(false);
 </script>
 
 <template>
-  <nav class="bg-white shadow-lg">
-    <div class="max-w-6xl mx-auto px-4">
+  <nav class="bg-zinc-800">
+    <div class="bg-zinc-800 max-w-7xl mx-auto px-4">
       <div class="flex justify-between">
-        <div class="flex space-x-7">
-          <a href="#" class="flex items-center py-4 px-2">
-            Vuenique Logo
+        <!-- menu -->
+        <div class="flex space-x-4 py-3">
+          <!-- logo -->
+          <a href="#" class="text-green-600 flex items-center py-4 px-2">
+            Vuez
           </a>
         </div>
-        <div class="hidden md:flex items-center space-x-1">
-          <a href="" 
-            class="">
+        <!-- reactive menu desktop -->
+        <div class="hidden md:flex items-center space-x-3">
+          <!-- target blank for opening in new tab or window and rel for security concerns -->
+          <a href="#" 
+            target="_blank" rel="noopener noreferrer"
+            class="text-zinc-300 hover:text-zinc-500">
             Medium
           </a>
-          <a href=""
-            class="">
-            Github
-          </a>
-          <a href=""
-            class="">
-            Stars
-          </a>
-          <a href=""
-            class="">
+          <a href="#"
+            target="_blank" rel="noopener noreferrer"
+            class="text-zinc-300 hover:text-zinc-500">
             NPM
           </a>
+          <a href="https://github.com/oslabs-beta/Vuenique"
+            target="_blank" rel="noopener noreferrer"
+            class="text-zinc-300 hover:text-zinc-500">
+            Github
+          </a>
+          <a href="https://github.com/oslabs-beta/Vuenique/stargazers"
+            target="_blank" rel="noopener noreferrer"
+            class="text-zinc-300 hover:text-zinc-500">
+            Stars
+          </a>
+        </div>
+        <div class="md:hidden flex items-center"> 
+          <button @click="showMobileMenu = !showMobileMenu" class="outline-none menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-zinc-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
       </div>
+    </div>
+    <!-- mobile menu -->
+    <div v-show="showMobileMenu" class="mobile-menu bg-zinc-800">
+      <a href="#" 
+        target="_blank" rel="noopener noreferrer"
+        class="block py-2 px-4 hover:bg-zinc-700 text-zinc-300 hover:text-zinc-500">
+        Medium
+      </a>
+      <a href="#"
+        target="_blank" rel="noopener noreferrer"
+        class="block py-2 px-4 hover:bg-zinc-700 text-zinc-300 hover:text-zinc-500">
+        NPM
+      </a>
+      <a href="https://github.com/oslabs-beta/Vuenique"
+        target="_blank" rel="noopener noreferrer"
+        class="block py-2 px-4 hover:bg-zinc-700 text-zinc-300 hover:text-zinc-500">
+        Github
+      </a>
+      <a href="https://github.com/oslabs-beta/Vuenique/stargazers"
+        target="_blank" rel="noopener noreferrer"
+        class="block py-2 px-4 hover:bg-zinc-700 text-zinc-300 hover:text-zinc-500">
+        Stars
+      </a>
     </div>
   </nav>
 </template>
