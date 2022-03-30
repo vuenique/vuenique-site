@@ -1,41 +1,45 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import type { Ref } from 'vue';
 
-const showMobileMenu: Ref<boolean> = ref(false);
+const showMobileMenu = ref(false);
 </script>
 
 <template>
-  <nav class="bg-zinc-800">
-    <div class="bg-zinc-800 max-w-7xl mx-auto px-4">
+  <nav class="fixed w-screen bg-gray-900 z-20">
+    <div class="bg-gray-900 max-w-7xl mx-auto px-4">
       <div class="flex justify-between">
         <!-- menu -->
-        <div class="flex space-x-4 py-3">
+        <div class="flex space-x-4">
           <!-- logo -->
-          <a href="#" class="text-green-600 flex items-center py-4 px-2">
-            Vuez
-          </a>
+          <div class="flex items-center py-4 px-2">
+            <img src="../../assets/testLogo.svg" class="w-14 h-14"/>
+            <h1 class="bg-gradient-to-r from-emerald-400 to-green-700 text-transparent bg-clip-text font-bold text-2xl">Vuenique</h1>
+          </div>
         </div>
         <!-- reactive menu desktop -->
         <div class="hidden md:flex items-center space-x-3">
           <!-- target blank for opening in new tab or window and rel for security concerns -->
           <a href="#" 
             target="_blank" rel="noopener noreferrer"
+            title="Medium"
             class="text-zinc-300 hover:text-zinc-500">
             Medium
           </a>
           <a href="#"
             target="_blank" rel="noopener noreferrer"
+            title="NPM"
             class="text-zinc-300 hover:text-zinc-500">
             NPM
           </a>
           <a href="https://github.com/oslabs-beta/Vuenique"
             target="_blank" rel="noopener noreferrer"
+            title="Github"
             class="text-zinc-300 hover:text-zinc-500">
             Github
           </a>
           <a href="https://github.com/oslabs-beta/Vuenique/stargazers"
             target="_blank" rel="noopener noreferrer"
+            title="Stars"
             class="text-zinc-300 hover:text-zinc-500">
             Stars
           </a>
