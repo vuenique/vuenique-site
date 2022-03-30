@@ -1,3 +1,15 @@
+/* color palette for site */
+:root {
+  --black-b: #161f27;
+  --black-t: #1e2934;
+  --charcal-dark: #273a4f;
+  --charcoal-light: #35495e;
+  --white-b: #e4edf6;
+  --white-t: #f1f4f9;
+  --green-primary: #22bf78;
+  --green-secondary: #2fda8d;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

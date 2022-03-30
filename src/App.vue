@@ -12,10 +12,10 @@ import FAQ from "./components/faq-section/FAQ.vue";
   <Navbar />
   <Hero />
   <Gallery />
-  <Installation />
-  <Features />
+  <!-- <Installation /> -->
+  <!-- <Features /> -->
+  <!-- <FAQ /> -->
   <Team />
-  <FAQ />
 </template>
 
 <style>

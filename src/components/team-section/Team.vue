@@ -18,11 +18,9 @@
 </script>
 
 <template>
-  <section class="bg-slate-900">
-    <div class="flex justify-center px-64 py-5 flex-wrap space-x-5">
-      <Card v-for="person in teamInfo"
-        v-bind="person"
-      />
+  <section class="">
+    <div class="flex justify-center py-5 flex-wrap space-x-5">
+      <Card v-for="person in teamInfo" v-bind="person" :key="person.id" />
     </div>
   </section>
 </template>
