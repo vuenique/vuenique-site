@@ -4,7 +4,7 @@ import Card from './Card.vue';
 </script>
 
 <template>
-  <div class="flex justify-between flex-wrap gap-2 px-8">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 px-8 mt-2">
     <Card />
     <Card />
     <Card />
