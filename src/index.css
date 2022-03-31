@@ -8,6 +8,7 @@
   --white-t: #f1f4f9;
   --green-primary: #22bf78;
   --green-secondary: #2fda8d;
+  --card-width: calc(calc(100%-20%)/2);
 }
 
 @tailwind base;

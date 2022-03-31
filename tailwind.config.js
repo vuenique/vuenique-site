@@ -19,6 +19,7 @@ module.exports = {
     fontFamily: {
       sans: ["Roboto", "IBM Plex Sans", "sans-serif"],
     },
+    
   },
   plugins: [],
 };
