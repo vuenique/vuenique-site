@@ -16,6 +16,7 @@ import FAQ from "./components/faq-section/FAQ.vue";
   <!-- <Features /> -->
   <!-- <FAQ /> -->
   <Team />
+  
 </template>
 
 <style>

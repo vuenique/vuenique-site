@@ -11,7 +11,7 @@
         <button class="transition-all duration-500 mt-8 border-2 w-full lg:w-fit lg:px-4 py-2 rounded-full text-3xl text-blackT border-greenP bg-greenP hover:bg-green-500 hover:animate-pulse">Learn more</button>
       </div>
       <div class="round-md order-first lg:order-last lg:px-0">
-        <img src="../../assets/testLogo.svg" class="w-20 h-20 md:w-[32rem] md:h-[32rem]"/>
+        <img src="../../assets/Vuenique1.svg" class="w-20 h-20 md:w-[32rem] md:h-[32rem]"/>
       </div>
     </div>
   </section>
