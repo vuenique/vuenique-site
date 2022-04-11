@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.resolve(__dirname, '../../dist/')));
 
-app.get('/data', controller.dataController, (req, res) => {
+app.get('/data', controller.barData, controller.linePathData, (req, res) => {
   res.status(200).json(res.locals.data);
 });
 
