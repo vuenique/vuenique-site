@@ -5,6 +5,7 @@ import Gallery from './components/gallery-section/Gallery.vue';
 import Features from './components/features-section/Features.vue';
 import Navbar from './components/navbar/Navbar.vue';
 import Installation from './components/installation-section/Installation.vue';
+import Docs from './components/docs/Docs.vue';
 import FAQ from './components/faq-section/FAQ.vue';
 import { onMounted, reactive } from 'vue';
 
@@ -26,6 +27,7 @@ onMounted(() => {
   <Gallery />
   <Features />
   <Installation />
+  <Docs />
   <!-- <FAQ /> -->
   <Team />
 </template>

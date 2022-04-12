@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import InstallationItem1 from './InstallationItems/InstallationItem1.vue';
-import InstallationItem3 from './InstallationItems/InstallationItem2.vue';
+import MainDocumentation from './documentationSections/MainDocumentation.vue';
 </script>
 
 <template>
@@ -10,11 +9,10 @@ import InstallationItem3 from './InstallationItems/InstallationItem2.vue';
       <h1
         class="py-8 text-4xl bg-gradient-to-r from-greenP to-whiteB text-transparent bg-clip-text"
       >
-        Installation
+        Docs
       </h1>
       <div class="flex-col">
-        <InstallationItem1 />
-        <InstallationItem3 />
+        <MainDocumentation />
       </div>
     </div>
   </section>
