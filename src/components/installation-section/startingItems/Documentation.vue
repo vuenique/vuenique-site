@@ -2,9 +2,17 @@
 
 <template>
   <h1
-    class="py-4 text-2xl text-whiteB hover:text-white hover:underline underline-offset-1"
+    class="py-4 text-2xl text-whiteB hover:text-white hover:underline underline-offset-1 max-w-min"
   >
-    Documentation
+    <a
+      href="https://github.com/oslabs-beta/Vuenique"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Documentation"
+      class="max-w-min"
+    >
+      Documentation
+    </a>
   </h1>
   <p class="text-whiteB font-light">
     placeholder text to see how this will look when it's more filled out
