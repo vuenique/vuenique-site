@@ -4,8 +4,7 @@ import Hero from './components/hero-section/Hero.vue';
 import Gallery from './components/gallery-section/Gallery.vue';
 import Features from './components/features-section/Features.vue';
 import Navbar from './components/navbar/Navbar.vue';
-import Installation from './components/installation-section/Installation.vue';
-import Docs from './components/docs/Docs.vue';
+import GettingStarted from './components/installation-section/GettingStarted.vue';
 import FAQ from './components/faq-section/FAQ.vue';
 import { onMounted, reactive } from 'vue';
 
@@ -26,8 +25,7 @@ onMounted(() => {
   <Hero />
   <Gallery />
   <Features />
-  <Installation />
-  <Docs />
+  <GettingStarted />
   <!-- <FAQ /> -->
   <Team />
 </template>
