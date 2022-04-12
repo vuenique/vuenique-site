@@ -12,12 +12,6 @@ import Card from './Card.vue';
     <Card />
     <Card />
     <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
   </div>
 </template>
 

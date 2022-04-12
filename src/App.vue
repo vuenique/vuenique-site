@@ -24,8 +24,8 @@ onMounted(() => {
   <Navbar />
   <Hero />
   <Gallery />
-  <!-- <Installation /> -->
   <Features />
+  <Installation />
   <!-- <FAQ /> -->
   <Team />
 </template>
