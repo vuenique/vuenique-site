@@ -5,7 +5,7 @@ import Card from './Card.vue';
     <!-- class="flex gap-8 mt-2" -->
 <template>
   <div
-    class="grid [grid-template-columns:repeat(auto-fill,minmax(24rem,1fr))] gap-10 mt-2"
+    class="grid [grid-template-columns:repeat(auto-fill,minmax(18rem,1fr))] gap-10 mt-2"
   >
     <Card :render="true" />
     <Card />
