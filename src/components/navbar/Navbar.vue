@@ -6,7 +6,7 @@ const showMobileMenu = ref(false);
 
 <template>
   <nav class="fixed w-screen bg-slate-800 z-20">
-    <div class="smax-w-7xl mx-auto container">
+    <div class="smax-w-7xl mx-auto container px-8 md:px-0">
       <div class="flex justify-between">
         <!-- menu -->
         <div class="flex space-x-4">
