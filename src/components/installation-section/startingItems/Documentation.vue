@@ -14,7 +14,7 @@
       Documentation
     </a>
   </h1>
-  <p class="text-whiteB font-light">
+  <p class="text-whiteB text-lg font-light">
     placeholder text to see how this will look when it's more filled out
     placeholder text to see how this will look when it's more filled out
     placeholder text to see how this will look when it's more filled out
