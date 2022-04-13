@@ -7,7 +7,7 @@ const props = defineProps(['render']);
 
 <template>
   <div
-    class="bg-charcoalP w-[80vw] lg:w-96 h-fit px-4 py-4 gap-x-1 gap-y-1 rounded-xl shadow-blue-400 shadow-lg hover:shadow-2xl hover:shadow-blue-300 hover:scale-y-105 hover:scale-x-105 transition duration-500"
+    class="bg-charcoalP g:w-full h-fit px-4 py-4 rounded-xl shadow-blue-400 shadow-md hover:shadow-lg hover:shadow-blue-300 hover:scale-y-105 hover:scale-x-105 transition duration-500"
   >
     <!--card with slight coloration compared to gallery background; border radius -->
     <!--consider glare and hover tilt effect, or maybe for chart itself-->
