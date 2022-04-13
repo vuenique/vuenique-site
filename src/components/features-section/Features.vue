@@ -14,7 +14,7 @@ import FeatureItem3 from './FeatureItems/FeatureItem3.vue';
         Features
       </h1>
       <div
-        class="grid [grid-template-columns:repeat(auto-fill,24rem)] gap-8 justify-items-centers mt-2"
+        class="grid [grid-template-columns:repeat(3,1fr)] gap-10 mt-2"
       >
         <FeatureItem1 />
         <FeatureItem2 />

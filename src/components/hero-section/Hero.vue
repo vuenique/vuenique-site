@@ -3,7 +3,7 @@
 <template>
   <section class="pt-20">
     <div
-      class="container px-8 lg:px-0 py-8 flex flex-col justify-between items-center lg:justify-betweeen lg:flex-row lg:py-20"
+      class="container mx-auto px-8 md:px-0 py-8 flex flex-col justify-between items-center lg:justify-betweeen lg:flex-row lg:py-20"
     >
       <div class="lg:pr-20 flex-col items-center pt-8 lg:pt-0">
         <h1

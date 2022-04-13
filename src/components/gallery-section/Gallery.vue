@@ -4,7 +4,7 @@ import CardDisplay from './CardDisplay.vue';
 
 <template>
   <section class="py-8">
-    <div class="container px-8 lg:px-0">
+    <div class="container mx-auto px-8 md:px-0">
       <hr class="w-full border-slate-500" />
       <div class="py-8">
         <h1
