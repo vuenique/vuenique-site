@@ -86,7 +86,7 @@ const showMobileMenu = ref(false);
     <!-- mobile menu -->
     <div v-show="showMobileMenu" class="mobile-menu bg-slate-900">
       <a
-        href="#"
+        href="https://medium.com/@alex.corlin6/vuenique-a9e6e2031e84"
         target="_blank"
         rel="noopener noreferrer"
         class="block py-2 px-4 hover:bg-slate-700 text-whiteB hover:text-slate-500"
@@ -94,7 +94,7 @@ const showMobileMenu = ref(false);
         Medium
       </a>
       <a
-        href="#"
+        href="https://www.npmjs.com/package/@vueniquejs/vuenique"
         target="_blank"
         rel="noopener noreferrer"
         class="block py-2 px-4 hover:bg-slate-700 text-whiteB hover:text-slate-500"
