@@ -10,11 +10,9 @@ import { onMounted, reactive } from 'vue';
 
 let demoData;
 onMounted(() => {
-  console.log('In mount');
   fetch('/data')
     .then((res) => res.json())
     .then((data) => {
-      console.log('Here in fetch', data)
       demoData = reactive(data);
     });
 });

@@ -13,10 +13,13 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@vueniquejs/vuenique": "^1.0.1",
     "body-parser": "^1.19.2",
     "concurrently": "^7.0.0",
+    "d3-array": "^3.1.6",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "latest": "^0.2.0",
     "mongoose": "^6.2.9",
     "nodemon": "^2.0.15",
     "path": "^0.12.7",
@@ -25,6 +28,7 @@
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
+    "@types/d3-array": "^3.0.2",
     "@types/jsdom": "^16.2.14",
     "@types/node": "^16.11.25",
     "@vitejs/plugin-vue": "^2.2.2",

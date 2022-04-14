@@ -2,11 +2,12 @@
 
 <template>
   <div class="text-whiteB font-light">
-    <h1 class="py-4 font-medium text-2xl text-whiteB">Feature 2</h1>
-    Testing this feature item component out with a longer string of text to see
-    what the layout looks like with a more filled in feature description.Testing
-    this feature item component out with a longer string of text to see what the
-    layout looks like with a more filled in feature description.
+    <h1 class="py-4 font-medium text-2xl text-whiteB">
+      Un-Opinionated Utility
+    </h1>
+    With the concept of providing users with low-level primitive pieces of
+    charts, users are able to have less restriction but more options and
+    flexibilities of how to build their charts
   </div>
 </template>
 
