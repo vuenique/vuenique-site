@@ -38,7 +38,7 @@ onMounted(() => {
     <slot v-if="props.render && isRendered"></slot>
     <img
       v-else
-      class="w-full h-fit rounded-xl"
+      class="w-full rounded-xl"
       src="../../assets/Sloth2.jpg"
       alt="Coming soon Sloth"
     />
