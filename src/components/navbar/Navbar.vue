@@ -25,7 +25,7 @@ const showMobileMenu = ref(false);
             class="text-whiteT hover:text-slate-500">
             Medium
           </a>
-          <a href="#"
+          <a href="https://www.npmjs.com/package/@vueniquejs/vuenique"
             target="_blank" rel="noopener noreferrer"
             title="NPM"
             class="text-whiteT hover:text-slate-500">

@@ -42,11 +42,15 @@ const teamInfo = ref([
 </script>
 
 <template>
-  <section class="">
-    <div class="flex justify-center py-5 flex-wrap space-x-5">
-      <Card v-for="person in teamInfo" v-bind="person" :key="person.id" />
-    </div>
-  </section>
+<section class="py-8">
+  <div class="container mx-auto px-8 md:px-0">
+      <hr class="w-full border-slate-500" />
+      <h2 class="py-8 text-center text-3xl lg:text-5xl text-greenP font-thin tracking-widest">Contributors</h2>
+      <div class="mt-8 flex justify-around flex-wrap gap-8">
+        <Card v-for="person in teamInfo" v-bind="person" :key="person.id" />
+      </div>
+  </div>
+</section>
 </template>
 
 <style></style>

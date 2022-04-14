@@ -17,11 +17,16 @@
           Vuenique brings the power of D3 and visx to Vue, allowing developers
           to plug-and-play components and create highly custom visualizations
         </p>
+        <a href="https://github.com/oslabs-beta/Vuenique"
+            target="_blank" rel="noopener noreferrer"
+            title="Github"
+            class="text-whiteT hover:text-slate-500">
         <button
           class="transition-all duration-500 mt-8 border-2 w-full lg:w-fit lg:px-4 py-2 rounded-full text-3xl text-blackT border-greenP bg-greenP hover:bg-green-500 hover:animate-pulse"
         >
           Learn more
         </button>
+        </a>
       </div>
       <div class="round-md order-first lg:order-last lg:px-0">
         <img

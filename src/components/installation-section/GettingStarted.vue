@@ -6,7 +6,7 @@ import Documentation from './startingItems/Documentation.vue';
 
 <template>
   <section class="py-8">
-    <div class="container px-8 lg:px-0">
+    <div class="container px-8 md:px-0 mx-auto">
       <hr class="border-slate-500" />
       <h1
         class="py-8 text-4xl bg-gradient-to-r from-greenP to-whiteB text-transparent bg-clip-text"
