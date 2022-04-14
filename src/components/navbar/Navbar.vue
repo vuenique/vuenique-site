@@ -24,8 +24,8 @@ const showMobileMenu = ref(false);
         <div class="hidden md:flex items-center space-x-3">
           <!-- target blank for opening in new tab or window and rel for security concerns -->
           <a
-            href="#"
-            target="https://medium.com/@alex.corlin6/vuenique-a9e6e2031e84"
+            href="https://medium.com/@alex.corlin6/vuenique-a9e6e2031e84"
+            target="_blank"
             rel="noopener noreferrer"
             title="Medium"
             class="text-whiteT hover:text-slate-500"

@@ -16,7 +16,7 @@
         >
           Inspired by visx, Vuenique brings the power of D3 to Vue, giving
           developers the ability to create highly customizable visualizations
-          with primitive componenets
+          with primitive components
         </p>
         <a
           href="https://github.com/oslabs-beta/Vuenique"
