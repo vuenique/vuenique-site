@@ -12,7 +12,7 @@ import CardDisplay from './CardDisplay.vue';
         >
           Examples
         </h1>
-        <p class="pt-4 text-whiteB">Click visualizations to see CodePen</p>
+        <!-- <p class="pt-4 text-whiteB">Click visualizations to see CodePen</p> -->
       </div>
       <CardDisplay />
     </div>

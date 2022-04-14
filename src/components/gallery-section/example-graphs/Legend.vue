@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { LegendLinear, scaleLinear } from '@vueniquejs/vuenique';
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed } from 'vue';
 
 // import { defaultDomain } from '@vueniquejs/vuenique';
 import type * as Vue from 'vue';

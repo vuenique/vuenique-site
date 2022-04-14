@@ -1,7 +1,6 @@
 <script setup lang="tsx">
 import { Bar, Group, scaleBand, scaleLinear } from '@vueniquejs/vuenique';
 import { ref, computed, reactive } from 'vue';
-import type { Ref } from 'vue';
 
 const clientWidth = ref(document.querySelector('.cardWidth')!.clientWidth);
 const xMax = computed(() => {

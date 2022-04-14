@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { Circle, scaleBand, scaleLinear } from '@vueniquejs/vuenique';
 import { ref, computed, reactive } from 'vue';
-import type { Ref } from 'vue';
 import { extent, max } from 'd3-array';
 
 type scatterPoint = {
