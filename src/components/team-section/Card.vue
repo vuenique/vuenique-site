@@ -5,7 +5,6 @@ import JamesMprofile from '../../assets/JamesMprofile.png';
 import TrevorGprofile from '../../assets/TrevorGprofile.jpg';
 import MiaZprofile from '../../assets/MiaZprofile.png';
 const props = defineProps(['id', 'photo', 'name', 'github', 'linkedin']);
-console.log(props.photo);
 
 function getPhoto(photoName: string): string | undefined {
   switch (photoName) {

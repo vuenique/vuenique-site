@@ -9,9 +9,6 @@ const props = defineProps(['render', 'title']);
 const isRendered = ref(false);
 
 onMounted(() => {
-  // cardForWidth.value.focus();
-  // calculatedWidth.value = cardForWidth.value.firstElementChild.offsetWidth;
-  // console.log("calculatedWidth within Card", calculatedWidth.value);
   isRendered.value = true;
 });
 </script>

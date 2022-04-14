@@ -11,12 +11,6 @@ window.addEventListener('resize', () => {
   clientWidth.value = document.querySelector('.cardWidth')!.clientWidth;
 });
 
-// onMounted(() => {
-//   const legendDiv = document.getElementById('div-legend')!;
-//   legendDiv.style.height = '' + clientWidth.value;
-//   console.log(legendDiv);
-// });
-
 const linearScale = computed(() => {
   return scaleLinear({
     domain: [0, 10],

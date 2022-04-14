@@ -2,7 +2,7 @@
 
 <template>
   <h1
-    class="py-4 pt-8 text-2xl text-whiteB hover:text-white hover:underline underline-offset-1 max-w-min"
+    class="py-4 pt-8 text-2xl text-whiteB hover:text-white underline underline-offset-1 hover:underline-offset-2 max-w-min"
   >
     <a
       href="https://github.com/oslabs-beta/Vuenique"

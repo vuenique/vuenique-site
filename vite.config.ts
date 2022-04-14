@@ -16,11 +16,11 @@ export default defineConfig({
   server: {
     proxy: {
       '/data': {
-           target: 'http://localhost:8080',
-           changeOrigin: true,
-           secure: false,      
-           ws: true,
-       }
-   },
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+        secure: false,
+        ws: true,
+      },
+    },
   },
-})
+});
