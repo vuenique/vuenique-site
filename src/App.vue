@@ -14,8 +14,8 @@ onMounted(() => {
   fetch('/data')
     .then((res) => res.json())
     .then((data) => {
+      console.log('Here in fetch', data)
       demoData = reactive(data);
-      console.log(demoData);
     });
 });
 </script>

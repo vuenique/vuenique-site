@@ -6,7 +6,7 @@ const showMobileMenu = ref(false);
 
 <template>
   <nav class="fixed w-screen bg-slate-800 z-20">
-    <div class="smax-w-7xl mx-auto container">
+    <div class="smax-w-7xl mx-auto container px-8 md:px-0">
       <div class="flex justify-between">
         <!-- menu -->
         <div class="flex space-x-4">
@@ -25,7 +25,7 @@ const showMobileMenu = ref(false);
             class="text-whiteT hover:text-slate-500">
             Medium
           </a>
-          <a href="#"
+          <a href="https://www.npmjs.com/package/@vueniquejs/vuenique"
             target="_blank" rel="noopener noreferrer"
             title="NPM"
             class="text-whiteT hover:text-slate-500">

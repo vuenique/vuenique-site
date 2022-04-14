@@ -27,4 +27,3 @@ coverage
 *.sln
 *.sw?
 .env
-package-lock.json

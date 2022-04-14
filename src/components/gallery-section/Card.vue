@@ -1,34 +1,44 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, onMounted, defineExpose } from 'vue';
+import type { Ref } from 'vue';
 
+const cardForWidth: any = ref(null);
+const calculatedWidth: Ref<number> = ref(0);
 const isExample = ref(false);
-const props = defineProps(['render']);
+const props = defineProps(['render', 'title']);
+const isRendered = ref(false);
+
+onMounted(() => {
+  // cardForWidth.value.focus();
+  // calculatedWidth.value = cardForWidth.value.firstElementChild.offsetWidth;
+  // console.log("calculatedWidth within Card", calculatedWidth.value);
+  isRendered.value = true;
+});
 </script>
 
 <template>
   <div
-    class="bg-charcoalP w-[80vw] lg:w-96 h-fit px-4 py-4 gap-x-1 gap-y-1 rounded-xl shadow-blue-400 shadow-lg hover:shadow-2xl hover:shadow-blue-300 hover:scale-y-105 hover:scale-x-105 transition duration-500"
+    class="bg-charcoalP px-4 py-4 rounded-xl shadow-blue-400 shadow-md hover:shadow-lg hover:shadow-blue-300 hover:scale-y-105 hover:scale-x-105 transition duration-500"
+    ref="cardForWidth"
   >
     <!--card with slight coloration compared to gallery background; border radius -->
     <!--consider glare and hover tilt effect, or maybe for chart itself-->
     <!--graph/chart layout, padding, maybe border, no border radius -->
     <!-- -->
     <!-- -->
-    <h1 v-if="props.render" class="text-center text-xl text-whiteB py-2">
-      Bar Chart
+    <h1
+      v-if="props.render"
+      class="cardWidth text-center text-xl text-whiteB py-2"
+    >
+      {{ props.title }}
     </h1>
     <h1 v-else class="text-center text-xl text-whiteB py-2">
       Chart of the Future
     </h1>
-    <img
-      v-if="props.render"
-      src="../../assets/BarChart.png"
-      class="w-full h-full rounded-xl"
-      alt="Bar Chart"
-    />
+    <slot v-if="props.render && isRendered"></slot>
     <img
       v-else
-      class="w-full h-full rounded-xl"
+      class="w-full h-fit rounded-xl"
       src="../../assets/Sloth2.jpg"
       alt="Coming soon Sloth"
     />
