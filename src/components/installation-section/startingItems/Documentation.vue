@@ -5,7 +5,7 @@
     class="py-4 pt-8 text-2xl text-whiteB hover:text-white underline underline-offset-1 hover:underline-offset-2 max-w-min"
   >
     <a
-      href="https://github.com/oslabs-beta/Vuenique"
+      href="https://github.com/oslabs-beta/Vuenique#documentation"
       target="_blank"
       rel="noopener noreferrer"
       title="Documentation"
