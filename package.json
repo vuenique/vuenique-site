@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "nodemon src/server/server.js",
-    "dev": "vite",
+    "dev": "vite & nodemon src/server/server.js",
     "build": "vue-tsc --noEmit && vite build --watch",
     "preview": "vite preview --port 5050",
     "test:unit": "vitest --environment jsdom",

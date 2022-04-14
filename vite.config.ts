@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 
 // https://vitejs.dev/config/
+
 export default defineConfig({
   plugins: [vue(), vueJsx()],
   resolve: {
@@ -13,14 +14,13 @@ export default defineConfig({
     },
   },
   server: {
-    // host: 'http://localhost:8080/',
-    // port: 3000,
-    '/': {
-      target: 'http://localhost:8080/',
-      changeOrigin: true,
-      configure: (proxy, options) => {
-        // proxy will be an instance of 'http-proxy'
-      },
-    },
+    proxy: {
+      '/data': {
+           target: 'http://localhost:8080',
+           changeOrigin: true,
+           secure: false,      
+           ws: true,
+       }
+   },
   },
-});
+})
